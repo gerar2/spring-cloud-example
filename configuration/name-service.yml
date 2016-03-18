@@ -1,0 +1,4 @@
+server:
+    port: 0
+
+names: John,Peter,Juan,Pedro,Michael,Carlos,World
