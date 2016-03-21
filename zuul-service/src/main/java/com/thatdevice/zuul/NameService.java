@@ -21,7 +21,7 @@ public class NameService {
     }
 
     private String getDefaultName() {
-        return "Arnold";
+        return "Baby";
     }
 
 }
