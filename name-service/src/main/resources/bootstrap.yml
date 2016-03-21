@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: name-service
+  cloud:
+    config:
+      uri: http://10.0.1.146:8081
