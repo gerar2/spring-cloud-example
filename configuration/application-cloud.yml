@@ -1,5 +1,8 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://breezie-eureka-service.cfapps.io/eureka/
+      defaultZone: http://breezie-eureka-service.cfapps.io/eureka/    
+  instance:
+    hostname: http://${app.name}.cfapps.io/
+    nonSecurePort: 80
   
