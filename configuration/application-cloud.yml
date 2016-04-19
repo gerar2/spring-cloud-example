@@ -3,6 +3,5 @@ eureka:
     serviceUrl:
       defaultZone: http://breezie-eureka-service.cfapps.io/eureka/    
   instance:
-    hostname: http://${spring.application.name}.cfapps.io
+    hostname: ${vcap.application.application_uris[0]}
     nonSecurePort: 80
-  
