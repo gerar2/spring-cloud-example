@@ -1,5 +1,5 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://breezie-eureka-service.cfapps.io/
+      defaultZone: http://breezie-eureka-service.cfapps.io/
   
