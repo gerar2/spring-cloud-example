@@ -1,0 +1,7 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://br-eureka-service.cfapps.io/eureka/    
+  instance:
+    hostname: ${vcap.application.application_uris[0]}
+    nonSecurePort: 80
