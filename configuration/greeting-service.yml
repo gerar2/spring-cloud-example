@@ -1,1 +1,3 @@
+server:
+  port: ${PORT:0}
 greetings: Hello,Hola,Good morning,Bye,Adios,Good afternoon
