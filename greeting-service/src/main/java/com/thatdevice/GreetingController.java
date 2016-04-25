@@ -12,7 +12,6 @@ import java.util.UUID;
  */
 
 @RestController
-@RefreshScope
 public class GreetingController {
 
     @Autowired
@@ -30,4 +29,5 @@ public class GreetingController {
     String instance() {
         return instanceID.toString();
     }
+
 }
