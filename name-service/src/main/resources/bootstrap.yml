@@ -4,3 +4,10 @@ spring:
   cloud:
     config:
       uri: http://localhost:8081
+
+---
+spring:
+  profiles: cloud
+  cloud:
+    config:
+      uri: http://br-config-service.cfapps.io/

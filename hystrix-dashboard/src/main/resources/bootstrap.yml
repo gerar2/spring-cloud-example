@@ -1,11 +1,11 @@
 spring:
   application:
-    name: greeting-service
+    name: hystrix-dashboard
   cloud:
     config:
       uri: http://localhost:8081
----
 
+---
 spring:
   profiles: cloud
   cloud:
