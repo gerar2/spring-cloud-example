@@ -17,9 +17,6 @@ import org.springframework.web.client.RestTemplate;
 public class GreetingPersonController {
 
     @Autowired
-    private RestTemplate restTemplate;
-
-    @Autowired
     private GreetingService greetingService;
 
     @Autowired
