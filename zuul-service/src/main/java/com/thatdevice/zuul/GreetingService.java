@@ -1,12 +1,12 @@
 package com.thatdevice.zuul;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.oauth2.client.OAuth2RestOperations;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * Created by gerardo on 18/03/16.
@@ -18,7 +18,7 @@ public class GreetingService {
     @LoadBalanced
     private OAuth2RestOperations restTemplate;
 
-    @HystrixCommand(fallbackMethod = "getDefaultGreeting")
+    @HystrixCommand(fallbackMethod = "getDefaultGreeting", commandProperties = { @HystrixProperty(name = "execution.isolation.strategy", value = "SEMAPHORE")})
     public String getGreeting() {
         return restTemplate.exchange("http://GREETING-SERVICE/", HttpMethod.GET, null, String.class).getBody();
     }
