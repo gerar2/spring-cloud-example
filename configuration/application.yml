@@ -8,5 +8,3 @@ security:
     resource:
       jwt:
         keyValue: secret
-    client:
-      client-id: # Necessary for autoconfiguration to create OAuth2RestOperations bean for forwarding the tokens

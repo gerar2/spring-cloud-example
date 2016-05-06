@@ -1,2 +1,7 @@
 server:
   port: ${PORT:9000}
+
+security:
+  oauth2:
+    client:
+      client-id: zuul-service # Necessary for autoconfiguration to create OAuth2RestOperations bean for forwarding the tokens
