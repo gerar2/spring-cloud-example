@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: client-service
+
+security:
+  oauth2:
+    client:
+      access-token-uri: http://localhost:8080/uaa/oauth/token
+      client-id: clientId
+      client-secret: secret
+      user-authorization-uri: http://localhost:8080/uaa/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:8080/uaa/user
+
+server:
+  port: 8585
