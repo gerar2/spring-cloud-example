@@ -4,6 +4,8 @@ spring:
   cloud:
     config:
       uri: http://localhost:8081
+
+server.contextPath: /uaa
 ---
 
 spring:
